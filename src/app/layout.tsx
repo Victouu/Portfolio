@@ -3,7 +3,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Provider } from "./providers";
 import { ThemeSwitch } from "./components/ThemeSwitch";
-import { SparklesCore } from "./components/Sparkles";
+
 
 
 const space_Grotesk = Space_Grotesk({ subsets: ["latin"] });
