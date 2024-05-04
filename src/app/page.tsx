@@ -12,7 +12,7 @@ export default function Home() {
         <div className="mt-10 flex w-full items-center justify-between md:mt-20">
           <a href=".">
             <span className="w-[105px] md:w-[120px] md:group-hover:hidden">
-              victorroue.fr
+              victorroue.vercel.app
             </span>
           </a>
           <Nav />
