@@ -3,7 +3,7 @@ import { Nav } from "./components/nav";
 import { ThemeSwitch } from "./components/ThemeSwitch";
 
 import { TextGenerateEffect } from "./components/text-reveal";
-const words = `JE VIOLE RENA
+const words = `Victor Roué
 `;
 export default function Home() {
   return (
