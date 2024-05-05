@@ -33,6 +33,7 @@ export default function Home() {
               Bonjour ! Je m &apos;appelle
             </h2>
             <TextGenerateEffect words={words} />
+            <p className="text-center md:whitespace-pre-line">Je suis étudiant en première année de BUT Informatique</p>
           </div>
         </div>
       </div>
