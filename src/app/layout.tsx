@@ -10,6 +10,8 @@ const space_Grotesk = Space_Grotesk({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Victor Roué",
   description: "portfolio de Victor Roué",
+
+  
 };
 
 export default function RootLayout({
@@ -22,7 +24,7 @@ export default function RootLayout({
       <body
         className={`${space_Grotesk.className}  bg-slate-50 dark:bg-[#0d1117]`}
       >
-        <Provider attribute="class" defaultTheme="system" enableSystem>
+        <Provider attribute="class" defaultTheme="light">
           <main>{children}<Analytics /></main>
         </Provider>
       </body>
