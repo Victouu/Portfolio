@@ -1,6 +1,8 @@
 import React from "react";
 import { Nav } from "./components/nav";
 import { ThemeSwitch } from "./components/ThemeSwitch";
+import Image from "next/image";
+
 
 import { TextGenerateEffect } from "./components/text-reveal";
 const words = `Victor Roué
@@ -11,9 +13,7 @@ export default function Home() {
       <div className="flex h-screen w-[90%] max-w-[90%] flex-col md:max-w-7xl overflow-hidden">
         <div className="mt-10 flex w-full items-center justify-between md:mt-20">
           <a href=".">
-            <span className="w-[105px] md:w-[120px] md:group-hover:hidden">
-              victorroue.vercel.app
-            </span>
+            Portfolio
           </a>
           <Nav />
           <ThemeSwitch />
