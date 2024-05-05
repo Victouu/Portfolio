@@ -20,12 +20,12 @@ const words = `Victor Roué
 
 export default function Home() {
 
-  const { theme } = useTheme();
-  const [isDarkTheme, setIsDarkTheme] = useState(theme === "dark");
+  const { theme, resolvedTheme } = useTheme();
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   useEffect(() => {
-    setIsDarkTheme(theme === "dark");
-  }, [theme]);
+    setIsDarkTheme(resolvedTheme === "dark");
+  }, [resolvedTheme]);
   return (
     <div className="flex min-h-screen w-screen flex-col items-center">
       <div className="flex h-screen w-[90%] max-w-[90%] flex-col md:max-w-7xl overflow-hidden">

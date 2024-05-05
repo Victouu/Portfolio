@@ -14,12 +14,12 @@ import projectBlack from "../../../public/project-black.svg";
 import projectWhite from "../../../public/project-white.svg";
 
 export const Nav = () => {
-  const { theme } = useTheme();
-  const [isDarkTheme, setIsDarkTheme] = useState(theme === "dark");
+  const { theme, resolvedTheme } = useTheme();
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   useEffect(() => {
-    setIsDarkTheme(theme === "dark");
-  }, [theme]);
+    setIsDarkTheme(resolvedTheme === "dark");
+  }, [resolvedTheme]);
 
   return (
     <nav
@@ -41,7 +41,7 @@ export const Nav = () => {
                 height={17}
               />
             </div>
-            <div className="hidden sm:block">Home</div>
+            <div className=" hover:scale-105 duration-100 hidden sm:block">Home</div>
           </a>
         </li>
         <li>
@@ -57,7 +57,7 @@ export const Nav = () => {
                 height={17}
               />
             </div>
-            <div className="hidden sm:block">A propos</div>
+            <div className="hover:scale-105 duration-100 hidden sm:block">A propos</div>
           </a>
         </li>
         <li>
@@ -73,7 +73,7 @@ export const Nav = () => {
                 height={17}
               />
             </div>
-            <div className="hidden sm:block">Projets</div>
+            <div className=" hover:scale-105 duration-100 hidden sm:block">Projets</div>
           </a>
         </li>
         <li>
@@ -89,7 +89,7 @@ export const Nav = () => {
                 height={17}
               />
             </div>
-            <div className="hidden sm:block">Contact</div>
+            <div className=" hover:scale-105 duration-100 hidden sm:block">Contact</div>
           </a>
         </li>
        

@@ -12,5 +12,5 @@ Bonjour, je suis Victor, Etudiant en Informatique.
 
 N'hésitez pas à me contacter pour toute question ou opportunité de collaboration.
 
-- Email : [votre email](mailto:votre-email@example.com)
-- LinkedIn : [Votre Nom](https://www.linkedin.com/in/votre-nom/)
+- Email : [rouevictor@gmail.com](mailto:rouevictor@gmail.com)
+- LinkedIn : [Victor Roué](https://www.linkedin.com/in/victor-roue-0081222a6//)
