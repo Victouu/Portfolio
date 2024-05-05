@@ -22,6 +22,7 @@ export const ThemeSwitch = () => {
   };
 
   return (
+    <div className=" ml-24">
     <button
       className={`relative inline-block h-6 w-12 rounded-full p-1 transition duration-300 focus:outline-none bg-gray-300 dark:bg-gray-800`}
       onClick={toggleTheme}
@@ -32,5 +33,6 @@ export const ThemeSwitch = () => {
         }`}
       ></span>
     </button>
+    </div>
   );
 };
