@@ -42,9 +42,7 @@ export const Nav = () => {
                 height={17}
               />
             </div>
-            <div className=" hover:scale-105 duration-100 hidden sm:block">
-              Home
-            </div>
+            <div className=" hover:scale-105 duration-100 hidden sm:block">Home</div>
           </a>
         </li>
         <li>
@@ -60,9 +58,7 @@ export const Nav = () => {
                 height={17}
               />
             </div>
-            <div className="hover:scale-105 duration-100 hidden sm:block">
-              A propos
-            </div>
+            <div className="hover:scale-105 duration-100 hidden sm:block">A propos</div>
           </a>
         </li>
         <li>
@@ -78,9 +74,7 @@ export const Nav = () => {
                 height={17}
               />
             </div>
-            <div className=" hover:scale-105 duration-100 hidden sm:block">
-              Projets
-            </div>
+            <div className=" hover:scale-105 duration-100 hidden sm:block">Projets</div>
           </a>
         </li>
         <li>
@@ -96,11 +90,10 @@ export const Nav = () => {
                 height={17}
               />
             </div>
-            <div className=" hover:scale-105 duration-100 hidden sm:block">
-              Contact
-            </div>
+            <div className=" hover:scale-105 duration-100 hidden sm:block">Contact</div>
           </a>
         </li>
+       
       </ul>
     </nav>
   );

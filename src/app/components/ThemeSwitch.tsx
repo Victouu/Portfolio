@@ -28,7 +28,7 @@ export const ThemeSwitch = () => {
         onClick={toggleTheme}
       >
         <span
-          className={`block h-4 w-4 rounded-full bg-white shadow-md transform transition-transform ease-in-out duration-300 ${
+          className={`block h-4 w-4 rounded-full  bg-slate-600 dark:bg-slate-50 shadow-md transform transition-transform ease-in-out duration-300 ${
             isDarkMode ? "translate-x-6" : ""
           }`}
         ></span>
