@@ -10,6 +10,7 @@ import { ThemeSwitch } from "./ThemeSwitch";
 //import photo
 import logolight from "../../../public/LOGO_light.png";
 import logodark from "../../../public/LOGO_dark.png";
+import { Cv } from "./cv";
 
 export default function Head() {
   const { theme, resolvedTheme } = useTheme();
@@ -33,6 +34,7 @@ export default function Head() {
         </a>
         <Nav />
         <ThemeSwitch />
+        <Cv />
       </div>
     </div>
   );

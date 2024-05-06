@@ -22,11 +22,12 @@ export const Reseaux = () => {
   }, [resolvedTheme]);
 
   return (
-    <div className="hidden fixed md:flex flex-col items-center justify-center bottom-1 left-10 bg-transparent">
+    <div className="hidden fixed md:flex flex-col items-center justify-center bottom-1 left-10 bg-transparent z-20">
+      <div className=" mb-4 rounded-full hover:bg-slate-300   dark:hover:bg-gray-600  cursor-pointer hover:scale-110 duration-100 ">
       <a
         href="https://github.com/Victouu"
         target="_blank"
-        className=" mb-4 hover:scale-110 duration-100"
+       
       >
         <Image
           src={isDarkTheme ? githubWhite : githubBlack}
@@ -35,10 +36,12 @@ export const Reseaux = () => {
           height={20}
         />
       </a>
+      </div>
+     
+      <div className=" mb-4 rounded hover:bg-slate-300 dark:hover:bg-gray-600  cursor-pointer hover:scale-110 duration-100 ">
       <a
         href="https://www.linkedin.com/in/victor-roue-0081222a6/"
         target="_blank"
-        className="mb-4 hover:scale-110 duration-100"
       >
         <Image
           src={isDarkTheme ? linkedinWhite : linkedinBlack}
@@ -47,10 +50,12 @@ export const Reseaux = () => {
           height={20}
         />
       </a>
+      </div>
+      <div className=" mb-4 rounded hover:bg-slate-300 dark:hover:bg-gray-600  cursor-pointer hover:scale-110 duration-100 ">
       <a
         href="https://discord.com/users/411123727577776129"
         target="_blank"
-        className="mb-4 hover:scale-110 duration-100"
+        
       >
         <Image
           src={isDarkTheme ? discordWhite : discordBlack}
@@ -59,8 +64,11 @@ export const Reseaux = () => {
           height={22}
         />
       </a>
-
-      <div className="bg-black dark:bg-slate-50  h-24 w-0.5 mb-4"></div>
+      </div>
+      
+      
+      <div className="bg-black dark:bg-slate-50  h-24 w-0.5 mb-4  hover:rotate-6 duration-300"></div>
+      
     </div>
   );
 };

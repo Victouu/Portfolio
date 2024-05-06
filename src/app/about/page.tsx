@@ -23,8 +23,9 @@ function About() {
     <div className="flex min-h-screen w-screen flex-col items-center">
       <div className="flex h-screen w-[90%] max-w-[90%] flex-col md:max-w-7xl overflow-hidden">
         <Head/>
-        <div className=" items-center flex">
+        <div className=" flex flex-col ustify-center ">
           <h1 className=" uppercase">Comming soon ...</h1>
+          <p>dssdsd</p>
         </div>
       </div>
     </div> 
