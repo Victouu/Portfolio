@@ -10,6 +10,12 @@ import Image from "next/image";
 import imgProfil from "../app/photo/111.jpg";
 import logolight from "../../public/LOGO_light.png"
 import logodark from "../../public/LOGO_dark.png"
+import cvWhite from "../../public/cv-white.svg";
+import cvBlack from "../../public/cv-black.svg";
+import githubBlack from "../../public/github-black.svg";
+import githubWhite from "../../public/github-white.svg";
+import linkedinBlack from "../../public/linkedin-black.svg";
+import linkedinWhite from "../../public/linkedin-white.svg";
 
 
 import { TextGenerateEffect } from "./components/text-reveal";
@@ -29,6 +35,26 @@ export default function Home() {
   return (
     <div className="flex min-h-screen w-screen flex-col items-center">
       <div className="flex h-screen w-[90%] max-w-[90%] flex-col md:max-w-7xl overflow-hidden">
+ \
+        <div className="hidden fixed md:flex flex-col items-center justify-center bottom-1 left-10 bg-transparent">
+          <a href="https://github.com/Victouu" target="_blank" className=" mb-4 hover:scale-110 duration-100">
+            <Image
+              src={isDarkTheme ? githubWhite : githubBlack}
+              alt="github"
+              width={20}
+              height={20}
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/victor-roue-0081222a6/" target="_blank" className="mb-4 hover:scale-110 duration-100">
+            <Image
+              src={isDarkTheme ? linkedinWhite : linkedinBlack}
+              alt="linkedin"
+              width={20}
+              height={20}
+            />
+          </a>
+          <div className="bg-black dark:bg-slate-50  h-24 w-0.5 mb-4"></div>
+        </div>
         <div className="mt-10 flex w-full items-center justify-between md:mt-20">
           <a href=".">
             <Image
