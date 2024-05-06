@@ -23,6 +23,7 @@ export default function Head() {
   return (
     <div>
       <Reseaux />
+      <Cv />
       <div className="mt-10 flex w-full items-center justify-between md:mt-20">
         <a href=".">
           <Image
@@ -34,7 +35,6 @@ export default function Head() {
         </a>
         <Nav />
         <ThemeSwitch />
-        <Cv />
       </div>
     </div>
   );

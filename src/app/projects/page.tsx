@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
@@ -8,11 +8,7 @@ import Image from "next/image";
 
 import Head from "../components/head";
 
-
-
-
 function Projects() {
-
   const { theme, resolvedTheme } = useTheme();
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
@@ -22,15 +18,13 @@ function Projects() {
   return (
     <div className="flex min-h-screen w-screen flex-col items-center">
       <div className="flex h-screen w-[90%] max-w-[90%] flex-col md:max-w-7xl overflow-hidden">
-        <Head/>
+        <Head />
         <div className=" items-center flex">
           <h1 className=" uppercase">Comming soon ...</h1>
         </div>
       </div>
-    </div> 
+    </div>
   );
-
 }
 
 export default Projects;
-
