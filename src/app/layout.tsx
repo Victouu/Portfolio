@@ -4,7 +4,7 @@ import "./globals.css";
 import { Provider } from "./providers";
 //vercel
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const space_Grotesk = Space_Grotesk({ subsets: ["latin"] });
