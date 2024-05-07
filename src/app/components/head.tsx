@@ -28,7 +28,8 @@ export default function Head() {
         <a href="." className="duration-300 hover:scale-110">
           <Image
             src={isDarkTheme ? logolight : logodark}
-            alt="logo"
+            alt="logo Victor Roué"
+            title="logo Victor Roué"
             width={100}
             height={100}
           />

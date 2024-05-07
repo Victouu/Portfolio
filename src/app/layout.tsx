@@ -2,13 +2,16 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Provider } from "./providers";
+//vercel
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 
 const space_Grotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Victor Roué",
-  description: "portfolio de Victor Roué",
+  description: "portfolio de Victor Roué developpeur web Next js React Tailwind css victor roue etudiant IUT Lannion front end back end victorroue victor roué",
 };
 
 export default function RootLayout({
@@ -24,7 +27,7 @@ export default function RootLayout({
         <Provider attribute="class" defaultTheme="light">
           <main>
             {children}
-
+            <SpeedInsights />
             <Analytics />
           </main>
         </Provider>

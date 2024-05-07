@@ -31,7 +31,9 @@ export const Reseaux = () => {
       >
         <Image
           src={isDarkTheme ? githubWhite : githubBlack}
-          alt="github"
+          alt="github logo"
+          title="github logo"
+
           width={20}
           height={20}
         />
@@ -46,6 +48,8 @@ export const Reseaux = () => {
         <Image
           src={isDarkTheme ? linkedinWhite : linkedinBlack}
           alt="linkedin"
+          title="linkedin"
+
           width={20}
           height={20}
         />
@@ -60,6 +64,7 @@ export const Reseaux = () => {
         <Image
           src={isDarkTheme ? discordWhite : discordBlack}
           alt="discord"
+          title="discord"
           width={22}
           height={22}
         />
