@@ -44,7 +44,7 @@ export default function Home() {
               alt="profile"
               width={250}
               height={250}
-              className="rounded-full"
+              className="rounded-full  h-44  w-44 md:w-64 md:h-64"
             />
             <h2 className=" text-xl w-full  font-extralight uppercase tracking-widest dark:text-blue md:text-xl text-tuscan text-center">
               Bonjour ! Je m &apos;appelle
