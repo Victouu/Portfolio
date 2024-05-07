@@ -24,7 +24,7 @@ export const Nav = () => {
 
   return (
     <nav
-      className={`absolute bottom-4 left-1/2 z-20 w-[90%] -translate-x-1/2 items-center rounded-[25px] bg-slate-300 dark:bg-slate-600  px-8 py-2 md:relative md:bottom-0 md:left-0 md:w-auto md:translate-x-0 md:bg-transparent dark:md:bg-transparent ${
+      className={` absolute bottom-4 left-1/2 z-20 w-[90%] -translate-x-1/2 items-center rounded-[25px] bg-slate-300 dark:bg-slate-600  px-8 py-2 md:relative md:bottom-0 md:left-0 md:w-auto md:translate-x-0 md:bg-transparent dark:md:bg-transparent ${
         isDarkTheme ? "dark" : ""
       }`}
     >

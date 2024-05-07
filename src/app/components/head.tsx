@@ -24,8 +24,8 @@ export default function Head() {
     <div>
       <Reseaux />
       <Cv />
-      <div className="mt-10 flex w-full items-center justify-between md:mt-20">
-        <a href=".">
+      <div className="mt-10 flex w-full items-center justify-between md:mt-20 z-20">
+        <a href="." className="duration-300 hover:scale-110">
           <Image
             src={isDarkTheme ? logolight : logodark}
             alt="logo"

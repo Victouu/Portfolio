@@ -24,6 +24,7 @@ export default function RootLayout({
         <Provider attribute="class" defaultTheme="light">
           <main>
             {children}
+
             <Analytics />
           </main>
         </Provider>

@@ -38,7 +38,7 @@ export default function Home() {
             display: "flex",
           }}
         >
-          <div className="md:max-w-2/3 flex w-full flex-col items-center space-y-11  z-10">
+          <div className="md:max-w-2/3 flex w-full flex-col items-center space-y-11 z-10">
             <Image
               src={imgProfil}
               alt="profile"
@@ -50,7 +50,7 @@ export default function Home() {
               Bonjour ! Je m &apos;appelle
             </h2>
             <TextGenerateEffect words={words} />
-            <p className="text-center md:whitespace-pre-line">
+            <p className="text-center md:whitespace-pre-line sm:text-wrap">
               Je suis étudiant en première année de BUT Informatique à
               l&apos;IUT de Lannion.
             </p>

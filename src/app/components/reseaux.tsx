@@ -23,7 +23,7 @@ export const Reseaux = () => {
 
   return (
     <div className="hidden fixed md:flex flex-col items-center justify-center bottom-1 left-10 bg-transparent z-20">
-      <div className=" mb-4 rounded-full hover:bg-slate-300   dark:hover:bg-gray-600  cursor-pointer hover:scale-110 duration-100 ">
+      <div className=" mb-4 rounded-full hover:bg-slate-300   dark:hover:bg-gray-600  cursor-pointer hover:scale-110 duration-300">
       <a
         href="https://github.com/Victouu"
         target="_blank"
@@ -38,7 +38,7 @@ export const Reseaux = () => {
       </a>
       </div>
      
-      <div className=" mb-4 rounded hover:bg-slate-300 dark:hover:bg-gray-600  cursor-pointer hover:scale-110 duration-100 ">
+      <div className=" mb-4 rounded hover:bg-slate-300 dark:hover:bg-gray-600  cursor-pointer hover:scale-110 duration-300">
       <a
         href="https://www.linkedin.com/in/victor-roue-0081222a6/"
         target="_blank"
@@ -51,7 +51,7 @@ export const Reseaux = () => {
         />
       </a>
       </div>
-      <div className=" mb-4 rounded hover:bg-slate-300 dark:hover:bg-gray-600  cursor-pointer hover:scale-110 duration-100 ">
+      <div className=" mb-4 rounded hover:bg-slate-300 dark:hover:bg-gray-600  cursor-pointer hover:scale-110 duration-300 ">
       <a
         href="https://discord.com/users/411123727577776129"
         target="_blank"
