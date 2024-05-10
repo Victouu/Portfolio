@@ -54,24 +54,7 @@ export const Reseaux = () => {
           height={20}
         />
       </a>
-      </div>
-      <div className=" mb-4 rounded hover:bg-slate-300 dark:hover:bg-gray-600  cursor-pointer hover:scale-110 duration-300 ">
-      <a
-        href="https://discord.com/users/411123727577776129"
-        target="_blank"
-        
-      >
-        <Image
-          src={isDarkTheme ? discordWhite : discordBlack}
-          alt="discord"
-          title="discord"
-          width={22}
-          height={22}
-        />
-      </a>
-      </div>
-      
-      
+      </div>  
       <div className="bg-black dark:bg-slate-50  h-24 w-0.5 mb-4  hover:rotate-6 duration-300"></div>
       
     </div>
