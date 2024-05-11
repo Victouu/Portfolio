@@ -45,6 +45,39 @@ function Contact() {
       );
     }
   };
+  const [nomValue, setNomValue] = useState("");
+
+  const handleNomChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setFormData((prevData) => ({
+      ...prevData,
+      nom: value,
+    }));
+  };
+  
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setFormData((prevData) => ({
+      ...prevData,
+      email: value,
+    }));
+  };
+  
+  const handleSujetChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setFormData((prevData) => ({
+      ...prevData,
+      sujet: value,
+    }));
+  };
+  
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const value = e.target.value;
+    setFormData((prevData) => ({
+      ...prevData,
+      message: value,
+    }));
+  };
   return (
     <div className="flex min-h-screen w-screen flex-col items-center">
       <div className="flex h-screen w-[90%] max-w-[90%] flex-col md:max-w-7xl overflow-hidden">
@@ -115,7 +148,8 @@ function Contact() {
                     className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                     id="name"
                     placeholder="Entrez votre nom"
-                    value={formData.nom} onChange={handleChange}
+                    value={formData.nom}
+                    onChange={handleNomChange}
                   />
                 </div>
                 <div className="space-y-2">
@@ -130,7 +164,8 @@ function Contact() {
                     id="email"
                     placeholder="Entrez votre email"
                     type="email"
-                    value={formData.email} onChange={handleChange}
+                    value={formData.email}
+                    onChange={handleEmailChange}
                   />
                 </div>
                 <div className="space-y-2">
@@ -144,7 +179,8 @@ function Contact() {
                     className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                     id="subject"
                     placeholder="Entrez le sujet"
-                    value={formData.sujet} onChange={handleChange} 
+                    value={formData.sujet}
+                    onChange={handleSujetChange}
                   />
                 </div>
                 <div className="space-y-2">
@@ -158,7 +194,8 @@ function Contact() {
                     className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[150px]"
                     id="message"
                     placeholder="Entrez votre message"
-                    value={formData.message} onChange={handleChange}
+                    value={formData.message}
+                    onChange={handleMessageChange}
                   ></textarea>
                 </div>
                 <button
