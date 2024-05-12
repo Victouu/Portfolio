@@ -18,7 +18,7 @@ function Contact() {
   }
   return (
     <div className="flex min-h-screen w-screen flex-col items-center">
-      <div className="flex h-screen w-[90%] max-w-[90%] flex-col md:max-w-7xl overflow-hidden">
+      <div className="flex h-screen w-[90%] max-w-[90%] flex-col md:max-w-7xl">
         <Head />
         <div className="w-full max-w-4xl mx-auto py-12 md:py-16 px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">

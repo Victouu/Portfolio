@@ -26,7 +26,7 @@ export default function Home() {
   }, [resolvedTheme]);
   return (
     <div className="flex min-h-screen w-screen flex-col items-center">
-      <div className="flex h-screen w-[90%] max-w-[90%] flex-col md:max-w-7xl overflow-hidden">
+      <div className="flex h-screen w-[90%] max-w-[90%] flex-col md:max-w-7xl">
         <Head />
         <div
           className="hidden w-full flex-1 items-center"

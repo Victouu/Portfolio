@@ -44,7 +44,7 @@ function About() {
   }, [resolvedTheme]);
   return (
     <div className="flex min-h-screen w-screen flex-col items-center">
-      <div className="flex h-screen w-[90%] max-w-[90%] flex-col md:max-w-7xl overflow-hidden">
+      <div className="flex h-screen w-[90%] max-w-[90%] flex-col md:max-w-7xl">
         <Head />
         <div className=" flex  items-center pt-5">
           <div className="md:max-w-2/3 mb-20 flex w-full flex-col items-center space-y-4 text-sm md:space-y-11 md:pb-0 md:text-lg">
@@ -148,9 +148,8 @@ function About() {
             </div>
 
             <h2 className="w-full text-xs font-extralight  uppercase tracking-widest dark:text-blue md:text-xl text-tuscan text-left">
-            Mon parcours
-          </h2>
-
+              Mon parcours
+            </h2>
           </div>
         </div>
       </div>

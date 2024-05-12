@@ -4,17 +4,17 @@ import "./globals.css";
 import { Provider } from "./providers";
 //vercel
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const space_Grotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Victor Roué",
-  description: "portfolio de Victor Roué, developpeur web, Next js, React, Tailwind css, victor roue, etudiant, victorroue, victor roué, Victor Roue; VICTOR ROUE",
+  description:
+    "portfolio de Victor Roué, developpeur web, Next js, React, Tailwind css, victor roue, etudiant, victorroue, victor roué, Victor Roue; VICTOR ROUE",
   alternates: {
-    canonical: './',
-}
+    canonical: "./",
+  },
 };
 
 export default function RootLayout({
