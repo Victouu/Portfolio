@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
-import axios from "axios";
+import { useForm, ValidationError } from "@formspree/react";
+
 //composants
 import Image from "next/image";
 //import photo
@@ -9,65 +10,12 @@ import Image from "next/image";
 import Head from "../components/head";
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    nom: "",
-    email: "",
-    sujet: "",
-    message: "",
-  });
-
-
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    try {
-        await axios.post('/contact', formData); // Utiliser le bon chemin de la route
-        alert("Votre message a été envoyé avec succès !");
-        // Réinitialiser le formulaire après l'envoi réussi si nécessaire
-        setFormData({
-            nom: "",
-            email: "",
-            sujet: "",
-            message: "",
-        });
-    } catch (error) {
-        console.error("Erreur lors de l'envoi du message :", error);
-        alert(
-            "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard."
-        );
-    }
-};
-  const handleNomChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setFormData((prevData) => ({
-      ...prevData,
-      nom: value,
-    }));
-  };
-  
-  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setFormData((prevData) => ({
-      ...prevData,
-      email: value,
-    }));
-  };
-  
-  const handleSujetChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setFormData((prevData) => ({
-      ...prevData,
-      sujet: value,
-    }));
-  };
-  
-  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const value = e.target.value;
-    setFormData((prevData) => ({
-      ...prevData,
-      message: value,
-    }));
-  };
+  const [state, handleSubmit] = useForm("xnqerdbw");
+  if (state.succeeded) {
+    alert(
+      "Merci pour votre message, je vous répondrai dans les plus brefs délais."
+    );
+  }
   return (
     <div className="flex min-h-screen w-screen flex-col items-center">
       <div className="flex h-screen w-[90%] max-w-[90%] flex-col md:max-w-7xl overflow-hidden">
@@ -130,16 +78,20 @@ function Contact() {
                   <label
                     className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                     htmlFor="name"
-
                   >
                     Nom
                   </label>
                   <input
                     className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                     id="name"
+                    type="text"
+                    name="name"
                     placeholder="Entrez votre nom"
-                    value={formData.nom}
-                    onChange={handleNomChange}
+                  />
+                  <ValidationError
+                    prefix="Name"
+                    field="name"
+                    errors={state.errors}
                   />
                 </div>
                 <div className="space-y-2">
@@ -151,11 +103,15 @@ function Contact() {
                   </label>
                   <input
                     className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    id="email"
                     placeholder="Entrez votre email"
+                    id="email"
                     type="email"
-                    value={formData.email}
-                    onChange={handleEmailChange}
+                    name="email"
+                  />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
                   />
                 </div>
                 <div className="space-y-2">
@@ -169,8 +125,13 @@ function Contact() {
                     className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                     id="subject"
                     placeholder="Entrez le sujet"
-                    value={formData.sujet}
-                    onChange={handleSujetChange}
+                    type="text"
+                    name="subject"
+                  />
+                  <ValidationError
+                    prefix="Subject"
+                    field="subject"
+                    errors={state.errors}
                   />
                 </div>
                 <div className="space-y-2">
@@ -184,13 +145,18 @@ function Contact() {
                     className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[150px]"
                     id="message"
                     placeholder="Entrez votre message"
-                    value={formData.message}
-                    onChange={handleMessageChange}
+                    name="message"
                   ></textarea>
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                  />
                 </div>
                 <button
-                  className=" border-slate-950 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground h-10 px-4 py-2 w-full"
+                  className="border  border-slate-200   inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground h-10 px-4 py-2 w-full"
                   type="submit"
+                  disabled={state.submitting}
                 >
                   Envoyer le message
                 </button>
