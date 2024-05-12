@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    async redirects() {
+      return [
+        {
+          source: '/contact',
+          destination: '/mailsender',
+          permanent: false, // rediriger temporairement
+        },
+      ];
+    },
+  };
+  
+  export default nextConfig;
