@@ -14,7 +14,7 @@ const transporter: Transporter = nodemailer.createTransport({
 });
 
 // Route pour gérer les soumissions de formulaire
-app.post('/envoyer-email', (req: Request, res: Response) => {
+app.post('/emailSend', (req: Request, res: Response) => {
   const { nom, email, sujet, message } = req.body;
 
   // Composer le corps de l'e-mail
@@ -37,3 +37,8 @@ app.post('/envoyer-email', (req: Request, res: Response) => {
   });
 });
 
+// Montez l'application Express sur un port
+const PORT = process.env.PORT || 3001; // Vous pouvez utiliser un port de votre choix
+app.listen(PORT, () => {
+  console.log(`Serveur Express en cours d'exécution sur le port ${PORT}`);
+});
