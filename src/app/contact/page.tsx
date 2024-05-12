@@ -21,22 +21,22 @@ function Contact() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      await axios.post("/emailSend", formData); // Assurez-vous que cette URL correspond à l'URL de votre backend
-      alert("Votre message a été envoyé avec succès !");
-      // Réinitialisez le formulaire après l'envoi réussi si nécessaire
-      setFormData({
-        nom: "",
-        email: "",
-        sujet: "",
-        message: "",
-      });
+        await axios.post('/contact', formData); // Utiliser le bon chemin de la route
+        alert("Votre message a été envoyé avec succès !");
+        // Réinitialiser le formulaire après l'envoi réussi si nécessaire
+        setFormData({
+            nom: "",
+            email: "",
+            sujet: "",
+            message: "",
+        });
     } catch (error) {
-      console.error("Erreur lors de l'envoi du message :", error);
-      alert(
-        "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard."
-      );
+        console.error("Erreur lors de l'envoi du message :", error);
+        alert(
+            "Une erreur s'est produite lors de l'envoi du message. Veuillez réessayer plus tard."
+        );
     }
-  };
+};
   const handleNomChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setFormData((prevData) => ({
