@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { HoverBorderGradient } from "../components/bouton-rgb";
 
 export function Cv() {

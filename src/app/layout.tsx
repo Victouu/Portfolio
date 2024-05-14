@@ -10,8 +10,7 @@ const space_Grotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Victor Roué",
-  description:
-    "portfolio de Victor Roué, developpeur web, Next js, React, Tailwind css, victor roue, etudiant, victorroue, victor roué, Victor Roue; VICTOR ROUE",
+  description: "Bienvenue sur mon premier portfolio !",
   alternates: {
     canonical: "./",
   },

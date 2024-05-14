@@ -1,19 +1,13 @@
 "use client";
-import React from "react";
 import { useTheme } from "next-themes";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 //composants
-import { Nav } from "./components/nav";
-import { ThemeSwitch } from "./components/ThemeSwitch";
 import Image from "next/image";
-import { Reseaux } from "./components/reseaux";
 //import photo
 import imgProfil from "../app/photo/111.jpg";
-import logolight from "../../public/LOGO_light.png";
-import logodark from "../../public/LOGO_dark.png";
 
-import { TextGenerateEffect } from "./components/text-reveal";
 import Head from "./components/head";
+import { TextGenerateEffect } from "./components/text-reveal";
 const words = `Victor Roué
 `;
 
