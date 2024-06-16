@@ -32,7 +32,7 @@ export default function Home() {
             display: "flex",
           }}
         >
-          <div className="md:max-w-2/3 flex w-full flex-col items-center space-y-11 z-10">
+          <div className="md:max-w-2/3 flex w-full flex-col items-center space-y-6 md:space-y-11 z-10">
             <Image
               src={imgProfil}
               alt="profile"

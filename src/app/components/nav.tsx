@@ -1,16 +1,15 @@
 "use client";
 
-import * as React from "react";
 import { useTheme } from "next-themes";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 //image
 import Image from "next/image";
-import homeIconDark from "../../../public/home-dark.svg";
-import homeIconLight from "../../../public/home-light.svg";
 import aboutBlack from "../../../public/about-black.svg";
 import aboutWhite from "../../../public/about-white.svg";
 import contactBlack from "../../../public/contact-black.svg";
 import contactWhite from "../../../public/contact-white.svg";
+import homeIconDark from "../../../public/home-dark.svg";
+import homeIconLight from "../../../public/home-light.svg";
 import projectBlack from "../../../public/project-black.svg";
 import projectWhite from "../../../public/project-white.svg";
 
@@ -42,7 +41,9 @@ export const Nav = () => {
                 height={17}
               />
             </div>
-            <div className=" hover:scale-105 duration-100 hidden sm:block">Home</div>
+            <div className=" hover:scale-105 duration-100 hidden sm:block">
+              Home
+            </div>
           </a>
         </li>
         <li>
@@ -58,7 +59,9 @@ export const Nav = () => {
                 height={17}
               />
             </div>
-            <div className="hover:scale-105 duration-100 hidden sm:block">A propos</div>
+            <div className="hover:scale-105 duration-100 hidden sm:block">
+              A propos
+            </div>
           </a>
         </li>
         <li>
@@ -74,7 +77,9 @@ export const Nav = () => {
                 height={17}
               />
             </div>
-            <div className=" hover:scale-105 duration-100 hidden sm:block">Projets</div>
+            <div className=" hover:scale-105 duration-100 hidden sm:block">
+              Projets
+            </div>
           </a>
         </li>
         <li>
@@ -90,10 +95,11 @@ export const Nav = () => {
                 height={17}
               />
             </div>
-            <div className=" hover:scale-105 duration-100 hidden sm:block">Contact</div>
+            <div className=" hover:scale-105 duration-100 hidden sm:block">
+              Contact
+            </div>
           </a>
         </li>
-       
       </ul>
     </nav>
   );
