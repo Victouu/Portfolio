@@ -50,9 +50,9 @@ function About() {
             </h2>
             <div className="flex flex-col space-y-4 leading-relaxed md:flex-row md:space-x-12 md:space-y-0">
               <p className="w-full whitespace-pre-line text-lg">
-                J'ai 19 ans et je suis étudiant en BUT Informatique à l'IUT de
-                Lannion, je me suis découvert une affection pour le web design
-                et développement.
+                J&apos;ai 19 ans et je suis étudiant en BUT Informatique à
+                l&apos;IUT de Lannion, je me suis découvert une affection pour
+                le web design et développement.
                 <br />À côté de mes études je suis passionné par la musique, le
                 sport, les jeux vidéos et le cinéma.
               </p>
