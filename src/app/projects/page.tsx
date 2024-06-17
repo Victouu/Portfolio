@@ -3,8 +3,20 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 //composants
 //import photo
-
 import Image from "next/image";
+import sae101 from "../../../public/sae101.png";
+import sae102 from "../../../public/sae102.png";
+import sae103 from "../../../public/sae103.png";
+import sae104 from "../../../public/sae104.png";
+import sae105 from "../../../public/sae105.png";
+import sae106 from "../../../public/sae106.png";
+import sae201 from "../../../public/sae201.png";
+import sae202 from "../../../public/sae202.png";
+import sae203 from "../../../public/sae203.png";
+import sae204 from "../../../public/sae204.png";
+import sae205 from "../../../public/sae205.png";
+import sae206 from "../../../public/sae206.png";
+
 import Head from "../components/head";
 function Projects() {
   const { theme, resolvedTheme } = useTheme();
@@ -37,7 +49,7 @@ function Projects() {
                     </div>
                     <div className="p-6">
                       <Image
-                        src="/placeholder.svg"
+                        src={sae101}
                         width={400}
                         height={300}
                         alt="Projet 1"
@@ -45,10 +57,13 @@ function Projects() {
                         style={{ aspectRatio: "400 / 300", objectFit: "cover" }}
                       />
                       <p className="text-gray-500 dark:text-gray-400">
-                        Description du projet 1
+                        Création d&apos;un sudoku en C.
                       </p>
                       <div className="mt-4">
-                        <a className="text-primary underline" href="#">
+                        <a
+                          className="text-primary underline"
+                          href="https://github.com/Victouu/Projets-1ere-annee-BUT-Info"
+                        >
                           Voir sur GitHub
                         </a>
                       </div>
@@ -65,7 +80,7 @@ function Projects() {
                     </div>
                     <div className="p-6">
                       <Image
-                        src="/placeholder.svg"
+                        src={sae102}
                         width={400}
                         height={300}
                         alt="Projet 2"
@@ -73,10 +88,13 @@ function Projects() {
                         style={{ aspectRatio: "400 / 300", objectFit: "cover" }}
                       />
                       <p className="text-gray-500 dark:text-gray-400">
-                        Description du projet 2
+                        Solveur de sudoku en C avec Backtracking etc.
                       </p>
                       <div className="mt-4">
-                        <a className="text-primary underline" href="#">
+                        <a
+                          className="text-primary underline"
+                          href="https://github.com/Victouu/Projets-1ere-annee-BUT-Info"
+                        >
                           Voir sur GitHub
                         </a>
                       </div>
@@ -93,7 +111,7 @@ function Projects() {
                     </div>
                     <div className="p-6">
                       <Image
-                        src="/placeholder.svg"
+                        src={sae103}
                         width={400}
                         height={300}
                         alt="Projet 3"
@@ -101,10 +119,15 @@ function Projects() {
                         style={{ aspectRatio: "400 / 300", objectFit: "cover" }}
                       />
                       <p className="text-gray-500 dark:text-gray-400">
-                        Description du projet 3
+                        Utilisation de docker pour faire un script bash qui
+                        génère une page HTML a partir d&apos;un fichier PHP
+                        page.
                       </p>
                       <div className="mt-4">
-                        <a className="text-primary underline" href="#">
+                        <a
+                          className="text-primary underline"
+                          href="https://github.com/Victouu/Projets-1ere-annee-BUT-Info"
+                        >
                           Voir sur GitHub
                         </a>
                       </div>
@@ -121,7 +144,7 @@ function Projects() {
                     </div>
                     <div className="p-6">
                       <Image
-                        src="/placeholder.svg"
+                        src={sae104}
                         width={400}
                         height={300}
                         alt="Projet 4"
@@ -129,10 +152,15 @@ function Projects() {
                         style={{ aspectRatio: "400 / 300", objectFit: "cover" }}
                       />
                       <p className="text-gray-500 dark:text-gray-400">
-                        Description du projet 4
+                        Conception d&apos;une base de données et modélisation
+                        avec un diagramme de classe et Traduction Diagramme de
+                        Classe en SQL.
                       </p>
                       <div className="mt-4">
-                        <a className="text-primary underline" href="#">
+                        <a
+                          className="text-primary underline"
+                          href="https://github.com/Victouu/Projets-1ere-annee-BUT-Info"
+                        >
                           Voir sur GitHub
                         </a>
                       </div>
@@ -149,7 +177,7 @@ function Projects() {
                     </div>
                     <div className="p-6">
                       <Image
-                        src="/placeholder.svg"
+                        src={sae105}
                         width={400}
                         height={300}
                         alt="Projet 5"
@@ -160,9 +188,12 @@ function Projects() {
                         Description du projet 5
                       </p>
                       <div className="mt-4">
-                        <a className="text-primary underline" href="#">
-                          Voir sur GitHub
-                        </a>
+                        <a
+                          className="text-primary underline"
+                          href="https://github.com/Victouu/Projets-1ere-annee-BUT-Info"
+                        ></a>
+                        Création d&apos;un site web de critique de film et série
+                        en HTML/CSS/JS.
                       </div>
                     </div>
                   </div>
@@ -177,7 +208,7 @@ function Projects() {
                     </div>
                     <div className="p-6">
                       <Image
-                        src="/placeholder.svg"
+                        src={sae106}
                         width={400}
                         height={300}
                         alt="Projet 6"
@@ -185,10 +216,14 @@ function Projects() {
                         style={{ aspectRatio: "400 / 300", objectFit: "cover" }}
                       />
                       <p className="text-gray-500 dark:text-gray-400">
-                        Description du projet 6
+                        Découverte de l&apos;environnement économique et
+                        écologique.
                       </p>
                       <div className="mt-4">
-                        <a className="text-primary underline" href="#">
+                        <a
+                          className="text-primary underline"
+                          href="https://github.com/Victouu/Projets-1ere-annee-BUT-Info"
+                        >
                           Voir sur GitHub
                         </a>
                       </div>
@@ -210,7 +245,7 @@ function Projects() {
                     </div>
                     <div className="p-6">
                       <Image
-                        src="/placeholder.svg"
+                        src={sae201}
                         width={400}
                         height={300}
                         alt="Projet 1"
@@ -218,10 +253,14 @@ function Projects() {
                         style={{ aspectRatio: "400 / 300", objectFit: "cover" }}
                       />
                       <p className="text-gray-500 dark:text-gray-400">
-                        Description du projet 1
+                        creation d&apos;une application pour gérer les facture
+                        d&apos;une salle de spectacle.
                       </p>
                       <div className="mt-4">
-                        <a className="text-primary underline" href="#">
+                        <a
+                          className="text-primary underline"
+                          href="https://github.com/Victouu/Projets-1ere-annee-BUT-Info"
+                        >
                           Voir sur GitHub
                         </a>
                       </div>
@@ -238,7 +277,7 @@ function Projects() {
                     </div>
                     <div className="p-6">
                       <Image
-                        src="/placeholder.svg"
+                        src={sae202}
                         width={400}
                         height={300}
                         alt="Projet 2"
@@ -246,10 +285,14 @@ function Projects() {
                         style={{ aspectRatio: "400 / 300", objectFit: "cover" }}
                       />
                       <p className="text-gray-500 dark:text-gray-400">
-                        Description du projet 2
+                        Comparaison d&apos;algorithmes servant à résoudre le
+                        problème des n-reines en python.
                       </p>
                       <div className="mt-4">
-                        <a className="text-primary underline" href="#">
+                        <a
+                          className="text-primary underline"
+                          href="https://github.com/Victouu/Projets-1ere-annee-BUT-Info"
+                        >
                           Voir sur GitHub
                         </a>
                       </div>
@@ -266,7 +309,7 @@ function Projects() {
                     </div>
                     <div className="p-6">
                       <Image
-                        src="/placeholder.svg"
+                        src={sae203}
                         width={400}
                         height={300}
                         alt="Projet 3"
@@ -274,10 +317,15 @@ function Projects() {
                         style={{ aspectRatio: "400 / 300", objectFit: "cover" }}
                       />
                       <p className="text-gray-500 dark:text-gray-400">
-                        Description du projet 3
+                        installation et la configuration des services
+                        nécessaires au développement d&apos;un site web sur une
+                        machine virtuelle en utilisant MySql/PHP/Apache2.
                       </p>
                       <div className="mt-4">
-                        <a className="text-primary underline" href="#">
+                        <a
+                          className="text-primary underline"
+                          href="https://github.com/Victouu/Projets-1ere-annee-BUT-Info"
+                        >
                           Voir sur GitHub
                         </a>
                       </div>
@@ -294,7 +342,7 @@ function Projects() {
                     </div>
                     <div className="p-6">
                       <Image
-                        src="/placeholder.svg"
+                        src={sae204}
                         width={400}
                         height={300}
                         alt="Projet 4"
@@ -302,10 +350,15 @@ function Projects() {
                         style={{ aspectRatio: "400 / 300", objectFit: "cover" }}
                       />
                       <p className="text-gray-500 dark:text-gray-400">
-                        Description du projet 4
+                        Création d&apos; et peuplement d&apos;une base de
+                        données sur les colleges de France en SQL. Et analuse
+                        des données avec Python et Matplotlib.
                       </p>
                       <div className="mt-4">
-                        <a className="text-primary underline" href="#">
+                        <a
+                          className="text-primary underline"
+                          href="https://github.com/Victouu/Projets-1ere-annee-BUT-Info"
+                        >
                           Voir sur GitHub
                         </a>
                       </div>
@@ -322,7 +375,7 @@ function Projects() {
                     </div>
                     <div className="p-6">
                       <Image
-                        src="/placeholder.svg"
+                        src={sae205}
                         width={400}
                         height={300}
                         alt="Projet 5"
@@ -330,10 +383,15 @@ function Projects() {
                         style={{ aspectRatio: "400 / 300", objectFit: "cover" }}
                       />
                       <p className="text-gray-500 dark:text-gray-400">
-                        Description du projet 5
+                        Gestion d&apos;un projet du début à la fin du projet, de
+                        la creation d&apos;une application de gestion des
+                        reservation d&apos;une salle de spectacle.
                       </p>
                       <div className="mt-4">
-                        <a className="text-primary underline" href="#">
+                        <a
+                          className="text-primary underline"
+                          href="https://github.com/Victouu/Projets-1ere-annee-BUT-Info"
+                        >
                           Voir sur GitHub
                         </a>
                       </div>
@@ -350,7 +408,7 @@ function Projects() {
                     </div>
                     <div className="p-6">
                       <Image
-                        src="/placeholder.svg"
+                        src={sae206}
                         width={400}
                         height={300}
                         alt="Projet 6"
@@ -358,10 +416,14 @@ function Projects() {
                         style={{ aspectRatio: "400 / 300", objectFit: "cover" }}
                       />
                       <p className="text-gray-500 dark:text-gray-400">
-                        Description du projet 6
+                        Création d&pos;un événement de team building pour une
+                        entreprise (flyer, film événementiel)
                       </p>
                       <div className="mt-4">
-                        <a className="text-primary underline" href="#">
+                        <a
+                          className="text-primary underline"
+                          href="https://github.com/Victouu/Projets-1ere-annee-BUT-Info"
+                        >
                           Voir sur GitHub
                         </a>
                       </div>
