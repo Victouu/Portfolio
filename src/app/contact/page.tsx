@@ -1,10 +1,8 @@
 "use client";
-import React from "react";
-import { useState, useEffect } from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import { ValidationError, useForm } from "@formspree/react";
+import { Input } from "../components/input";
 
 //composants
-import Image from "next/image";
 //import photo
 
 import Head from "../components/head";
@@ -81,13 +79,13 @@ function Contact() {
                   >
                     Nom
                   </label>
-                  <input
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  <Input
                     id="name"
+                    placeholder="entrer votre nom"
                     type="text"
                     name="name"
-                    placeholder="Entrez votre nom"
                   />
+
                   <ValidationError
                     prefix="Name"
                     field="name"
@@ -101,13 +99,13 @@ function Contact() {
                   >
                     Email
                   </label>
-                  <input
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="Entrez votre email"
-                    id="email"
-                    type="email"
-                    name="email"
+                  <Input
+                    id="mail"
+                    placeholder="entrer votre mail"
+                    type="mail"
+                    name="mail"
                   />
+
                   <ValidationError
                     prefix="Email"
                     field="email"
@@ -121,13 +119,14 @@ function Contact() {
                   >
                     Sujet
                   </label>
-                  <input
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  <Input
+                    className="group-hover/input:shadow-none transition duration-400"
                     id="subject"
-                    placeholder="Entrez le sujet"
+                    placeholder="entrer votre nom"
                     type="text"
                     name="subject"
                   />
+
                   <ValidationError
                     prefix="Subject"
                     field="subject"
@@ -142,7 +141,7 @@ function Contact() {
                     Message
                   </label>
                   <textarea
-                    className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[150px]"
+                    className="flex w-full border border-input border-none border-slate-300 dark:border-gray-600 bg-white dark:bg-zinc-900 text-black dark:text-white shadow-input rounded-md px-3 py-2 text-sm file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 dark:placeholder-text-neutral-600 focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-400 dark:focus-visible:ring-neutral-600  dark:shadow-[0px_0px_1px_1px_var(--neutral-700)] group-hover/input:shadow-none transition duration-400 bg-background  ring-offset-background placeholder:text-muted-foreground f focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[150px]"
                     id="message"
                     placeholder="Entrez votre message"
                     name="message"

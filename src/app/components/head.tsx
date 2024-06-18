@@ -1,15 +1,14 @@
 "use client";
-import React from "react";
 import { useTheme } from "next-themes";
-import { useState, useEffect } from "react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 //composants
-import { Reseaux } from "./reseaux";
-import { Nav } from "./nav";
 import { ThemeSwitch } from "./ThemeSwitch";
+import { Nav } from "./nav";
+import { Reseaux } from "./reseaux";
 //import photo
-import logolight from "../../../public/LOGO_light.png";
 import logodark from "../../../public/LOGO_dark.png";
+import logolight from "../../../public/LOGO_light.png";
 import { Cv } from "./cv";
 
 export default function Head() {

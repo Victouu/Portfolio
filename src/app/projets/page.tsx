@@ -18,7 +18,7 @@ import sae205 from "../../../public/sae205.png";
 import sae206 from "../../../public/sae206.png";
 
 import Head from "../components/head";
-function Projects() {
+function Projets() {
   const { theme, resolvedTheme } = useTheme();
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
@@ -439,4 +439,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Projets;
