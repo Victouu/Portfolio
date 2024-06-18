@@ -416,7 +416,7 @@ function Projets() {
                         style={{ aspectRatio: "400 / 300", objectFit: "cover" }}
                       />
                       <p className="text-gray-500 dark:text-gray-400">
-                        Création d&pos;un événement de team building pour une
+                        Création d&apos;un événement de team building pour une
                         entreprise (flyer, film événementiel)
                       </p>
                       <div className="mt-4">
