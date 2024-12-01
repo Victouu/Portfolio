@@ -45,7 +45,7 @@ export default function Home() {
             </h2>
             <TextGenerateEffect words={words} />
             <p className="text-center md:whitespace-pre-line sm:text-wrap">
-              Je suis étudiant en première année de BUT Informatique à
+              Je suis étudiant en deuxième année de BUT Informatique à
               l&apos;IUT de Lannion.
             </p>
           </div>
